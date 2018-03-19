@@ -3,9 +3,9 @@ require("firebase/auth");
 require("firebase/database");
 
 var config = {
-   apiKey: "AIzaSyB12-gGTDUH8a9DjR4Y8br5B_3e3swnMC4",
-   authDomain: "contriboot-2017.firebaseapp.com",
-   databaseURL: "https://contriboot-2017.firebaseio.com",
+    apiKey: "AIzaSyCowFpjIxJIgGAC-M1Nz-lLWTk_GSwW3_Q",
+    authDomain: "contriboot-2018.firebaseapp.com",
+    databaseURL: "https://contriboot-2018.firebaseio.com"
  };
 firebase.initializeApp(config);
 
