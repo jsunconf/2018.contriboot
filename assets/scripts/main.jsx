@@ -188,13 +188,9 @@ const App = React.createClass({
         <h2>Add contrib or interest</h2>
 
         {isLoggedin ?
-          <Logout user={this.state.user} logout={this.logout} /> :
+          [<Logout user={this.state.user} logout={this.logout} />,
+            <AddEntriesForm onEntryAdd={this.handleEntryAdd} />] :
           <Login loginWithGithub={this.loginWithGithub}/>
-        }
-
-        {isLoggedin ?
-          <AddEntriesForm onEntryAdd={this.handleEntryAdd} /> :
-          null
         }
 
       </div>

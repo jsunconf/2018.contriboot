@@ -10,7 +10,6 @@
     "watch:images": "npm run build:images && watch-run -p 'assets/images/*' npm run build:images",
     "clean": "rm -rf static && mkdir static",
     "clean:images": "rm -rf static/images && mkdir static/images",
-    "test": "npm run lint && npm run build",
     "lint": "eslint ./assets/scripts",
     "copy:dist": "rm -rf build && mkdir -p build && cp index.html build && cp -r static build",
     "build": "npm run clean && npm run build:css && npm run build:js && npm run copy:dist",
